@@ -14,7 +14,7 @@ var livereload = require('gulp-livereload');
 var paths = {
   jade: ['./jade/**/*.jade'],
   sass: ['./sass/**/*.scss'],
-  js: []
+  js: ['./main.js']
 }
 
 gulp.task('jade', function() {
@@ -48,10 +48,15 @@ gulp.task('server', shell.task([
     'python -m SimpleHTTPServer 8000'
 ]));
 
+gulp.task('js', function() {
+  livereload.reload();
+});
+
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch(paths.jade, ['jade']);
   gulp.watch(paths.sass, ['sass']);
+  gulp.watch(paths.js, ['js']);
 });
 
 gulp.task('default', ['watch', 'jade', 'sass', 'server']);

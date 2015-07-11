@@ -67,11 +67,13 @@ span.sub {
   width: 100%; }
 
 #splashscreen-image {
-  background-image: url("images/splash-small.jpeg");
-  -webkit-filter: blur(7px);
-          filter: blur(7px);
+  background-image: url("images/sunset-small.jpg");
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: left center;
   height: 100%;
   margin: -10px; }
 
@@ -105,9 +107,12 @@ span.sub {
 #content-wrapper::-webkit-scrollbar-track {
   box-shadow: none;
   border-radius: 7px;
-  background-color: #C7E4EE; }
+  background-color: transparent; }
 
 #content-wrapper::-webkit-scrollbar-thumb {
   box-shadow: none;
   border-radius: 7px;
   background-color: rgba(0, 0, 0, 0.54); }
+
+#ending {
+  height: 700px; }

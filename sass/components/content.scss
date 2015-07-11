@@ -13,16 +13,17 @@
 }
 
 #splashscreen-image {
-  background-image: url('images/splash-small.jpeg');
-  filter: blur(7px);
+  background-image: url('images/sunset-small.jpg');
+  filter: blur(5px);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: left center; 
   height: 100%;
   margin: -10px;
 }
 
 #intro {
-  // margin-top: -20px;
   z-index: 9;
 
   position: absolute;
@@ -65,7 +66,7 @@
 #content-wrapper::-webkit-scrollbar-track {
   box-shadow: none;
   border-radius: 7px;
-  background-color: $sky;
+  background-color: transparent;
 }
 
 #content-wrapper::-webkit-scrollbar-thumb {
@@ -73,4 +74,8 @@
   border-radius: 7px;
   background-color: $text_secondary;
   @extend %sh1;
+}
+
+#ending {
+  height: 700px;
 }
