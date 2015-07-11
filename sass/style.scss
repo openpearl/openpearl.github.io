@@ -1,5 +1,7 @@
 @import "./helpers/colors";
+@import "./helpers/shadows";
 
 @import "./base";
 
-@import "./components/intro";
+@import "./components/sidebar";
+@import "./components/content";

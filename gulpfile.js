@@ -18,7 +18,7 @@ var paths = {
 }
 
 gulp.task('jade', function() {
-  gulp.src(paths.jade)
+  gulp.src('./jade/index.jade')
     .pipe(jade())
     .pipe(gulp.dest('./'))
     .pipe(livereload());
