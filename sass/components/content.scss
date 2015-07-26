@@ -6,52 +6,6 @@
   position: relative;
 }
 
-#splashscreen {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-
-#splashscreen-image {
-  background-image: url('images/sunset-small.jpg');
-  filter: blur(5px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: left center; 
-  height: 100%;
-  margin: -10px;
-}
-
-#intro {
-  z-index: 9;
-
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  @extend %sh1;
-
-  & > section {
-    color: $text_light_primary;
-    font-weight: 200;
-  }
-}
-
-#intro-content {
-  @extend #intro;
-  top: 230px;
-  width: 400px;
-
-  & > p {
-    margin: 0px;
-    color: $text_light_secondary;
-    font-weight: 200;
-  }
-}
-
 #content {
   padding-top: 100px;
   padding-left: 100px;
@@ -77,5 +31,5 @@
 }
 
 #ending {
-  height: 700px;
+  height: 100px;
 }
