@@ -1,0 +1,463 @@
+/**********************************************************************************
+  Resets
+**********************************************************************************/
+/*html,*/ body.phr_data_practices, #phr-wrapper div, #phr-wrapper span, #phr-wrapper applet, #phr-wrapper object, #phr-wrapper iframe,
+/*#phr-wrapper h1,*/ #phr-wrapper h2, #phr-wrapper h3, #phr-wrapper h4, #phr-wrapper h5, #phr-wrapper h6, #phr-wrapper p, #phr-wrapper blockquote, #phr-wrapper pre,
+#phr-wrapper a, #phr-wrapper abbr, #phr-wrapper acronym, #phr-wrapper address, #phr-wrapper big, #phr-wrapper cite, #phr-wrapper code,
+#phr-wrapper del, #phr-wrapper dfn, #phr-wrapper em, #phr-wrapper font, #phr-wrapper img, #phr-wrapper ins, #phr-wrapper kbd, #phr-wrapper q, #phr-wrapper s, #phr-wrapper samp,
+#phr-wrapper small, #phr-wrapper strike, #phr-wrapper strong, #phr-wrapper sub, #phr-wrapper sup, #phr-wrapper tt, #phr-wrapper var,
+#phr-wrapper dl, #phr-wrapper dt, #phr-wrapper dd, #phr-wrapper ol, #phr-wrapper ul, #phr-wrapper li,
+#phr-wrapper fieldset, /*#phr-wrapper form,*/ #phr-wrapper label, #phr-wrapper legend,
+#phr-wrapper table, #phr-wrapper caption, #phr-wrapper tbody, #phr-wrapper tfoot, #phr-wrapper thead, #phr-wrapper tr, #phr-wrapper th, #phr-wrapper td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+#phr-wrapper a:focus {
+	outline: 0;
+}
+body.phr_data_practices {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+#phr-wrapper ol, #phr-wrapper ul {
+	list-style: none;
+}
+/* tables are given cellpadding/cellspacing for CSS-disabled browsers */
+#phr-wrapper table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+#phr-wrapper caption, #phr-wrapper th, #phr-wrapper td {
+	text-align: left;
+	font-weight: normal;
+}
+#phr-wrapper blockquote:before, #phr-wrapper blockquote:after,
+#phr-wrapper q:before, #phr-wrapper q:after {
+	content: "";
+}
+#phr-wrapper blockquote, q {
+	quotes: "" "";
+}
+#phr-wrapper strong {
+  font-weight: bold;
+}
+#phr-wrapper em {
+  font-style: italic;
+}
+
+/**********************************************************************************
+  Block Elements
+**********************************************************************************/
+body.phr_data_practices {
+  margin: 0 auto;
+}
+#phr-wrapper {
+  background: #fff;
+  margin: 0 auto;
+  text-align: left;
+  width: 900px;
+}
+.portletBody #phr-wrapper {
+	font-size: 1.3em;
+	margin:0 !important;
+}
+#phr-wrapper .phr-container-form {
+	width: 800px;
+}
+#phr-wrapper .phr-container-form .note {
+	float: left;
+	font-size: .9em;
+	padding: 0;
+}
+#ie7down .phr-container-form form label {
+	font-size:.9em;
+}
+#phr-wrapper #phr-header {
+  padding: 1.2em 0 1em 0;
+}
+#phr-wrapper #phr-intro {
+  float: left;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 700px;  
+}
+#phr-meta {
+  float: left;
+  font-size: .9em;
+  padding-left: 10px;
+  text-align: right;
+  width: 190px;
+}
+#phr-meta p {
+	margin-top: 20px;
+	text-align: left;
+}
+#phr-meta ol {
+	list-style: decimal outside none;
+	padding-left: 20px;
+	text-align: left;
+}
+#phr-content {
+  padding: 30px 0 20px 0;
+}
+.full #phr-content {
+	padding-top: 10px;
+}
+#phr-wrapper #phr-definitions {
+  margin-top: 1em;
+	width:438px;
+}
+.customappText #phr-wrapper #phr-definitions a#phr-definitions-toggle,
+.customappText #phr-wrapper #phr-definitions .phr-definition h3 a {
+	font-size: inherit;
+}
+#phr-wrapper #phr-definitions-header {
+  padding: 1.3em 0 1em 0;
+}
+#phr-wrapper #phr-definitions h2 {
+  display:inline;
+}
+#phr-wrapper #phr-definitions .phr-definition {
+  padding: 5px 0 0 .8em;
+  margin-top: 0;
+  line-height: 1.3em;
+  background: url('http://www.healthit.gov/phr-data-practices/images/bg-definition.gif') 2.3em 0 no-repeat;
+}
+#phr-wrapper #phr-definitions h3 {
+  padding: 8px 0 10px 24px; 
+  font-size: 1.2em;
+  font-weight: bold; 
+  color: black;
+  background: url('http://www.healthit.gov/phr-data-practices/images/icon-definition.gif') -600px 8px no-repeat;
+  cursor: pointer;
+  width:414px;
+}
+#phr-wrapper #phr-definitions h3 a:link, #phr-wrapper #phr-definitions h3 a:visited
+#phr-wrapper #phr-definitions h3 a:hover, #phr-wrapper #phr-definitions h3 a:active {
+  color: black;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+#phr-wrapper #phr-definitions .phr-definition p.phr-top {
+  text-align: right;
+}
+#phr-wrapper #phr-definitions .phr-definition p.phr-top a { 
+  background: url('http://www.healthit.gov/phr-data-practices/images/top.png') 0px 2px no-repeat;
+  padding-left: 20px;
+}
+#phr-wrapper #phr-contact {
+  line-height: 1.4em;
+  background: #f6f6f6;
+  margin: 2em 0 0 0;
+  padding: 1.5em 20px;
+  text-align: center;
+}
+#phr-wrapper #phr-mice {
+  margin-top: 1.3em;
+  border-top: 1px solid #4b80aa;
+  padding: 1em 20px;
+  font-size: .9em;
+}
+#phr-wrapper #phr-revision-info {
+  text-align: right;
+  font-size: .9em;
+}
+
+/**********************************************************************************
+  Typography
+**********************************************************************************/
+body.phr_data_practices {
+  font-family: "Arial", sans-serif;
+  font-size: 90%;
+  color: #333;
+  line-height: 1.1em;
+}
+#phr-wrapper h1, #phr-wrapper h2, #phr-wrapper h3 {
+  font-weight: bold;
+  line-height: 1em;
+}
+#phr-wrapper h1, #phr-wrapper h1.onc-pageheader {
+	font-size: 1.95em;
+}
+body.form #phr-wrapper h1,
+body.results #phr-wrapper h1  {
+	color: #004C83;
+	margin: .3em .8em .8em 0;
+}
+#phr-wrapper h2 {
+  color: #004C83;
+  margin: 0 0 .5em 0;
+  padding: 0;
+  font-size: 1.7em;
+}
+#phr-wrapper #phr-data td h2, #phr-data th h2 {
+  color: white;
+  padding: 20px 15px;
+  margin-bottom: 0;
+  background: url('http://www.healthit.gov/phr-data-practices/images/bg-h2.gif') top left no-repeat;
+}
+#phr-wrapper #phr-data #secure h2 {
+	margin-top: 25px;
+	width: 450px;
+}
+#phr-wrapper ul {
+  list-style: none;
+  margin: 0 0 0 1.6em;
+  padding: 0 0 1em 0;
+}
+#phr-wrapper ul li {
+  background: url('http://www.healthit.gov/phr-data-practices/images/bullet-square.gif') top left no-repeat;
+  padding: 0 0 0 1em;
+}
+#phr-wrapper p {
+  padding-bottom: 1em;
+  margin: 0;
+}
+#phr-wrapper #phr-content a:link,
+#phr-wrapper #phr-content a:visited,
+#phr-wrapper #phr-content a:active {
+  color: #004C83;
+  text-decoration:underline;
+}
+#phr-wrapper a:hover {
+  text-decoration:none;
+}
+#phr-wrapper a:focus {
+	outline: 1px dashed #ccc;
+}
+#phr-wrapper em {
+  font-style: italic;
+}
+#phr-wrapper small {
+  font-size: .9em;
+}
+#phr-wrapper big {
+  font-size: 1.1em;
+}
+#phr-wrapper strong {
+  font-weight: bold;
+}
+#phr-wrapper hr {
+  background: #4b80aa;
+  color: #4b80aa;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border: none;
+}
+.customappText #phr-wrapper #phr-intro a, .customappText table#phr-data a.phr-tip, .customappText table#phr-data-inner a.phr-tip {
+	font-size: .95em;
+}
+
+/**********************************************************************************
+  Main Table
+**********************************************************************************/
+table#phr-data {
+  margin-top: 3px;
+  margin: 0 0 0 0;
+}
+table#phr-data td, 
+table#phr-data th {
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  vertical-align: middle;
+}
+table#phr-data td.phr-question {
+  padding: 0 15px;
+  width: 330px;
+  line-height: 1.4em;
+  background: #f2f2f2; /*grey light*/
+}
+table#phr-data td.phr-answer {
+  padding: 0;
+  width: 75px;
+  background: #e7e7e7; /*grey*/
+}
+table#phr-data td.phr-question,
+table#phr-data td.phr-answer {
+  height: 75px; /* row1 height */
+}
+table#phr-data td.phr-answer-highlight {
+  background: #fbf0af; /*yellow light*/
+}
+table#phr-data td.phr-boolean {
+  text-align: center;
+  font-weight: bold;
+}
+table#phr-data td.phr-boolean fieldset {
+	padding-left:5px;
+}
+table#phr-data th.phr-statement p {
+  background-color: #F2F2F2;
+  padding: 15px;
+  width: 408px;
+}
+/* quirksmode requires IE6 box model measurements */
+#ie table#phr-data th.phr-statement p {
+	width:438px;
+}
+
+/**********************************************************************************
+  Inner Table
+**********************************************************************************/
+table#phr-data td.phr-answer-detail-container {
+  padding: 0;
+  border: 0;
+  vertical-align:top;
+}
+table#phr-data-inner th#phr-we-release {
+  width: auto;
+}
+table#phr-data-inner th#phr-we-release div {
+  padding-left: 38px;
+}
+table#phr-data-inner th {
+  height: 75px; /* row1 height */
+  padding: 0 10px;
+  width: 60px;
+}
+table#phr-data-inner th a#phr-personal-data-definition,
+table#phr-data-inner th a#phr-statistical-data-definition {
+  display: block;
+  font-size: .9em;
+  margin: 0;
+  line-height: 1.4em;
+}
+table#phr-data-inner td,
+table#phr-data-inner th {
+  background: #fbf0af; /*yellow light*/
+}
+table#phr-data-inner td.phr-release-details {
+  height: 42px;
+  width: 300px;
+  line-height: 1.2em;
+  border-left: 38px solid white;
+  padding: 0 10px;
+  background: #f9e98d; /*yellow*/
+}
+table#phr-data-inner td.phr-release-details,
+table#phr-data-inner td.phr-boolean {
+  font-size: .85em;
+}
+table#phr-data-inner td.phr-boolean {
+  font-weight: normal;
+}
+table#phr-data td.phr-rounded-bl {
+  background: #f2f2f2 url('http://www.healthit.gov/phr-data-practices/images/bg-rounded-bl.gif') no-repeat left bottom; 
+}
+table#phr-data td.phr-rounded-br {
+  background: #e7e7e7 url('http://www.healthit.gov/phr-data-practices/images/bg-rounded-br.gif') bottom right no-repeat; 
+}
+
+/**********************************************************************************
+  Tooltip
+**********************************************************************************/
+#phr-wrapper div#phr-tooltip {
+  width: 534px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#phr-wrapper div#phr-tooltip div.phr-tooltip-arrow {
+/*  background: transparent url('http://www.healthit.gov/phr-data-practices/images/tooltip/arrow-br.png') 30px 0 no-repeat;*/
+  background: transparent url('http://www.healthit.gov/phr-data-practices/images/tooltip/arrow-br.png') -300px 0 no-repeat !important;
+  height: 18px;
+  position: relative;
+  top: 12px;
+}
+#phr-wrapper div#phr-tooltip div.phr-tooltip-top {
+  background: url('http://www.healthit.gov/phr-data-practices/images/tooltip/top.png') 0 0 no-repeat;
+  height: 24px;
+  position:relative;
+}
+	#phr-wrapper div#phr-tooltip div.phr-tooltip-top a.close_tooltip {
+	    background:url('http://www.healthit.gov/phr-data-practices/images/close-x-18x18.png') no-repeat scroll left -1px transparent;
+	    color:#333;
+	    display:block;
+	    line-height:18px;
+	    padding-left:20px;
+	    position:absolute;
+	    right:25px;
+	    text-decoration:none;
+	    top:25px;
+	}
+#phr-wrapper div.phr-tooltip-content {
+  width: 486px;
+  padding: 0 24px;
+  background: url('http://www.healthit.gov/phr-data-practices/images/tooltip/body.png') 0 0 repeat-y;  
+}
+#ie #phr-wrapper div.phr-tooltip-content {
+	width:534px;
+}
+
+#phr-wrapper div#phr-tooltip .phr-definition-body {
+  width: 485px;
+}
+
+/* quirksmode requires IE6 box model measurements */
+.portalContent #ie7down div.phr-tooltip-content {
+  width: 534px;	
+}
+#phr-wrapper div#phr-tooltip div.phr-tooltip-bottom {
+  background: url('http://www.healthit.gov/phr-data-practices/images/tooltip/bottom.png') 0 0 no-repeat;
+  height: 24px;  
+}
+#phr-wrapper div#phr-tooltip p.phr-top {
+  display: none;
+}
+#phr-wrapper div#phr-tooltip h3 {
+  padding: 8px 0 0; 
+  margin-bottom: 10px;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  color: black;
+}
+.customappText #phr-wrapper div#phr-tooltip h3 a {
+	font: inherit !important;
+	font-size:1em !important;
+}
+#phr-wrapper div#phr-tooltip h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+/**********************************************************************************
+  Misc
+**********************************************************************************/
+#phr-wrapper .logo {
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+}
+/*#phr-wrapper #phr-intro p {
+	padding: 0 20px 0 120px;
+}*/
+.phr-clear {
+  clear: both;
+}
+.phr-left {
+  text-align: left;
+}
+.phr-center {
+  text-align: center;
+}
+.phr-right {
+  text-align: right;
+}
+#phr-wrapper noscript {
+  color: #990000;
+  font-size: .9em;
+  font-style: italic;
+}
