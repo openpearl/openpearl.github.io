@@ -1,3 +1,18 @@
+#skip {
+  position: fixed;
+  right: 20;
+  top: 20;
+
+  z-index: 9999;
+  font-size: 20pt;
+  font-weight: 100;
+
+  & > a {
+    color: gray;
+    opacity: 0.6;
+  }
+}
+
 #content {
   width: 100%;
   max-width: 800px;
@@ -9,6 +24,11 @@
 }
 
 .content-card {
+
+  // For jQuery animation. 
+  margin-top: 30px;
+  opacity: 0;
+  
   display: flex;
   align-items: center;
   padding: 20px;
@@ -19,27 +39,7 @@
   margin-bottom: 10px;
   width: fit-content;
   max-width: 500px;
-
-  // animation-name: renderBubble;
-  // animation-iteration-count: 1;
-  // animation-timing-function: ease-in;
-  // animation-duration: .5s;
-
-  // opacity: 0;
-
 }
-
-// @keyframes renderBubble {
-//   0% {
-//     transform: translateY(100px);
-//     opacity: 0;
-//   }
-
-//   100% {
-//     transform: translateY(0px);
-//     opacity: 1;
-//   }
-// }
 
 #icon-holder {
   border-radius: 20px;
@@ -63,7 +63,6 @@
 
 .card-wrapper {
   display: flex;
-  // align-items: flex-end;
   justify-content: flex-end;
   width: 100%;
 }

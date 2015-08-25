@@ -16,3 +16,11 @@ body {
 
   background: linear-gradient($light, $sky);
 }
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}

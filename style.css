@@ -12,6 +12,23 @@ body {
   height: 100%;
   background: linear-gradient(#EBF6F0, #C7E4EE); }
 
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  font-weight: bold; }
+
+#skip {
+  position: fixed;
+  right: 20;
+  top: 20;
+  z-index: 9999;
+  font-size: 20pt;
+  font-weight: 100; }
+  #skip > a {
+    color: gray;
+    opacity: 0.6; }
+
 #content {
   width: 100%;
   max-width: 800px;
@@ -21,6 +38,8 @@ body {
   box-sizing: border-box; }
 
 .content-card {
+  margin-top: 30px;
+  opacity: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
