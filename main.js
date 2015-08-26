@@ -18,15 +18,15 @@ $('#skip').click(function() {
 });
 
 // DELAY MESSAGE
-var $ellipsis = $('#ellipsis')[0];
+var $ellipsis = $('#ellipsis');
 var $cards = $('.content-card').not($ellipsis).toArray();
-function timeout(i) {
+function timeout(index) {
   
-  globalI = i;
+  globalI = index;
   
   var textLength = 0;
-  if (i > 0 && i < $cards.length) {
-    textLength = $cards[i-1].innerText.length;
+  if (index > 0 && index < $cards.length) {
+    textLength = $cards[index-1].innerText.length;
   }
 
   var delay = 850 + textLength * 25;
@@ -36,7 +36,7 @@ function timeout(i) {
 
     $($ellipsis).hide();
 
-    if (i <= $cards.length) {
+    if (index <= $cards.length) {
 
       $($ellipsis)
         .css({
@@ -45,16 +45,26 @@ function timeout(i) {
         .animate({
           opacity: 0
         }, 1, function() {
-          if (i < $cards.length - 1) {
-            $($ellipsis)
-              .delay(500)
-              .animate({
-                opacity: 1
-              }, 300);
+
+          if ($cards[index + 1]) {
+            var _classList = $cards[index+1].classList; 
+            
+            $ellipsis.removeClass('right');
+            if ($.inArray('right', _classList) > -1) {
+              $ellipsis.addClass('right');
+            }
+
+            if (index < $cards.length - 1) {
+              $($ellipsis)
+                .delay(500)
+                .animate({
+                  opacity: 1
+                }, 300);
+            }
           }
 
-          if (i < $cards.length) {
-            $($cards[i])
+          if (index < $cards.length) {
+            $($cards[index])
               .css({
                 display: 'flex'
               })
@@ -65,11 +75,11 @@ function timeout(i) {
           }
         });
 
-      if (i === $cards.length - 1) {
+      if (index === $cards.length - 1) {
         $('#footer').show();
       }
 
-      timeout(i + 1);
+      timeout(index + 1);
     }
   }, delay);
 
