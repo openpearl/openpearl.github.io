@@ -15,6 +15,7 @@ body {
   // display: flex;
 
   background: linear-gradient($light, $sky);
+  background-attachment: fixed;
 }
 
 a, a:hover, a:active, a:visited {
@@ -22,5 +23,5 @@ a, a:hover, a:active, a:visited {
 }
 
 a:hover {
-  font-weight: bold;
+  // font-weight: bold;
 }

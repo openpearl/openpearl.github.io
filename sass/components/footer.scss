@@ -3,10 +3,19 @@
   display: none;
 
   margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
 
   .navlink {
-    margin: 0 20px;
+    margin: 0 10px;
+  }
+
+  a {
+    color: gray;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 
