@@ -1,5 +1,7 @@
 var timeouts = [];
 var globalI = 0;
+var ellipsis = $('#ellipsis');
+
 
 // SKIP
 var globalDelay = 0;
@@ -13,11 +15,12 @@ $('#skip').click(function() {
 });
 
 // DELAY MESSAGE
-var $cards = $('.content-card').toArray();
+var $ellipsis = $('#ellipsis')[0];
+var $cards = $('.content-card').not($ellipsis).toArray();
 function timeout(i) {
   globalI = i;
   var textLength = 0;
-  if (i > 0) {
+  if (i > 0 && i < $cards.length) {
     textLength = $cards[i-1].innerText.length;
   }
 
@@ -25,11 +28,37 @@ function timeout(i) {
   delay = globalDelay || delay;
 
   var myTimeout = setTimeout(function () {
-    if (i < $cards.length) {
-      $($cards[i]).animate({
-        opacity: 1,
-        'margin-top': "-=30px"
-      }, 200);  
+    if (i <= $cards.length) {
+
+      console.log("Sup");
+      $($ellipsis)
+        .css({
+          display: 'flex'
+        })
+        .animate({
+          opacity: 0
+        }, 1, function() {
+          if (i < $cards.length - 1) {
+            console.log('Sup2');
+            $($ellipsis)
+              .delay(500)
+              .animate({
+                opacity: 1
+              }, 300);
+          }
+        });
+
+      if (i < $cards.length) {
+        $($cards[i])
+          .css({
+            display: 'flex'
+          })
+          .animate({
+            opacity: 1,
+            'margin-top': "-=30px"
+          }, 300);  
+      }
+
       timeout(i + 1);
     }
   }, delay);

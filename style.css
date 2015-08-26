@@ -40,9 +40,7 @@ a:hover {
 .content-card {
   margin-top: 30px;
   opacity: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -92,6 +90,10 @@ a:hover {
   height: 67px;
   background-size: cover;
   background-image: url("http://narborion.com/wp-content/uploads/2014/10/available-on-iphone-app-store-logo.png"); }
+
+#ellipsis {
+  opacity: 1;
+  margin-top: 0; }
 
 #footer {
   margin-top: 40px;

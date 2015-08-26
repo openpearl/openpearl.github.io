@@ -28,8 +28,8 @@
   // For jQuery animation. 
   margin-top: 30px;
   opacity: 0;
-  
-  display: flex;
+  display: none;
+
   align-items: center;
   padding: 20px;
   @extend %sh1;
@@ -81,3 +81,10 @@
   background-size: cover;
   background-image: url('http://narborion.com/wp-content/uploads/2014/10/available-on-iphone-app-store-logo.png');
 }
+
+#ellipsis {
+  // display: flex !important;
+  opacity: 1;
+  margin-top: 0;
+}
+
