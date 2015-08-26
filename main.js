@@ -29,7 +29,9 @@ function timeout(index) {
     textLength = $cards[index-1].innerText.length;
   }
 
-  var delay = 850 + textLength * 25;
+  // var delay = 850 + textLength * 25;
+  var delay = 100 + textLength;
+  // var delay = 100 + textLength * 5;
   delay = globalDelay || delay;
 
   var myTimeout = setTimeout(function () {
