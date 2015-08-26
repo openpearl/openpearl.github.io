@@ -96,6 +96,7 @@ a:hover {
   margin-top: 0; }
 
 #footer {
+  display: none;
   margin-top: 40px;
   text-align: center; }
   #footer .navlink {
