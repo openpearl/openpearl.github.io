@@ -16,6 +16,11 @@ body {
 a, a:hover, a:active, a:visited {
   text-decoration: none; }
 
+.flex-container {
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important; }
+
 #skip {
   position: fixed;
   right: 20;
@@ -129,3 +134,7 @@ a, a:hover, a:active, a:visited {
     color: gray; }
   #footer a:hover {
     text-decoration: underline; }
+
+@media screen and (max-width: 320px) {
+  #footer {
+    font-size: 80%; } }

@@ -50,14 +50,14 @@ function timeout(index) {
   var myTimeout = setTimeout(function () {
 
     // First, make sure the ellipsis is hidden.
-    $($ellipsis).hide();
+    $($ellipsis).removeClass('flex-container').hide();
 
     // Only execute if we have messages.
     if (index < $cards.length) {
 
       // Reveal the ellipsis.
       $($ellipsis)
-        .css({ display: 'flex' })
+        .addClass('flex-container')
         .animate({
           opacity: 0
         }, 1, function() {
@@ -82,9 +82,7 @@ function timeout(index) {
 
           // Finally, reveal the card itself.
           $($cards[index])
-            .css({
-              display: 'flex'
-            })
+            .addClass('flex-container')
             .animate({
               opacity: 1,
               'margin-top': "-=30px"

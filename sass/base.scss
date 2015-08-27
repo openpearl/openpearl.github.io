@@ -25,3 +25,11 @@ a, a:hover, a:active, a:visited {
 a:hover {
   // font-weight: bold;
 }
+
+.flex-container{
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
