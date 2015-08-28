@@ -37,7 +37,11 @@ function timeout(index) {
   // Calculate the textLength of the PREVIOUS card.
   // This allows the user to have time to read through the message.
   if (index > 0 && index < $cards.length) {
-    textLength = $cards[index-1].innerText.length;
+    try {
+      textLength = $cards[index-1].innerText.length;
+    } catch(e) {
+      textLength = $cards[index-1].textContent.length;
+    }
   }
 
   // Set our delays.
